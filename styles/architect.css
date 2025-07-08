@@ -128,7 +128,7 @@ main>section{
 
 /* design some facts */
 .fact{
-    margin-top: 100px;
+    
     border: 2px solid #FF900E;
     border-radius: 8px;
     width: 240px;
@@ -140,10 +140,12 @@ main>section{
 }
 .facts-description{
     max-width: 542px;
+    
 }
 .facts-container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    margin-top: 100px;
     
 }
 .fact-value{
@@ -167,11 +169,15 @@ main>section{
         gap: 5px;
         margin-top: 80px;
     }
-    .team-img-container{
+    .team-img-container,.facts-container{
         grid-template-columns: repeat(1,1fr);
     }
     .team-img-container>img{
         width: 100%;
+    }
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
     }
 }
 /* media query for medium device */
@@ -180,6 +186,20 @@ main>section{
     .team-work{
         flex-direction: column;
     }
-   
+   .facts-container{
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    gap: 24px;
+   }
+
+   .some-facts{
+    text-align: center;
+   }
+  
+   .facts-description{
+   max-width: 70%;
+   margin: 0 auto;
+ 
+   }
 
 }
