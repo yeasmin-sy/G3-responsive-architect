@@ -264,3 +264,25 @@ footer{
    
 
 }
+@media screen and (min-device-width:810px) and (max-device-width:820px) {
+    .features{
+        flex-direction: column;
+    }
+    .section-title{
+        font-size: 4rem;
+    }
+    .features-card-title{
+        font-size: 2.5rem;
+    }
+    .features p{
+        font-size: 2rem;
+    }
+    .features-img-container>img{
+    width: 100%;
+    }
+    #features-badge{
+        margin-left: 0px;
+        padding: 20px;
+    }
+
+}
